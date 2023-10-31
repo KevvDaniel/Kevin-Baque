@@ -1,0 +1,690 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 7rem;
+}
+
+.menu-navegacion ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.menu-navegacion ul li {
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.menu-navegacion ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #242E52;
+}
+
+.menu-navegacion ul li a:hover {
+    color: #242E5260;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.menu-navegacion ul li:hover {
+    transform: scale(1.2);
+    transition: all 1s ease;
+}
+
+a button {
+    text-decoration: none;
+}
+
+button {
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9a82ac;
+    box-shadow: 0 0.25rem 1rem #4f4358;
+    transition: all 0.3s ease;
+}
+
+.menu-header i {
+    display: none;
+}
+
+.menu-header a img:hover {
+    transform: scale(2);
+    text-align: center;
+    transition: all 2s ease;
+}
+
+.portada {
+    display: flex;
+    flex-wrap: nowrap;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 6rem;
+    gap: 1rem;
+}
+
+.portada .portada-izquierda {
+    width: 50%;
+    text-align: center;
+    padding: 1rem;
+}
+
+@keyframes animacion {
+    0% {
+        opacity: 100%
+    }
+
+    25% {
+        transform: translateY(-10%);
+        opacity: 70%
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.animacion {
+    animation: animacion 3s infinite;
+}
+
+.portada-izquierda img {
+    width: 100%;
+    height: 100%;
+}
+
+.portada .portada-derecha {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    align-content: space-around;
+    padding: 1rem;
+    gap: 3rem;
+    text-align: right;
+}
+
+.portada-derecha h1 {
+    width: 85%;
+    font-size: 3rem;
+    color: #232C50;
+    padding: 1rem;
+}
+
+.portada-derecha p {
+    font-size: 1.25rem;
+    width: 100%;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+.boton-contacto-portada {
+    margin: 0;
+}
+
+/*--------------------------------------------- texto info 1 ---------------------------------------------------*/
+
+.texto-info {
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3rem 6rem;
+}
+
+.texto-info p.mobile {
+    display: none;
+}
+
+.texto-info h2 {
+    width: 45%;
+    text-align: left;
+    font-size: 2.5rem;
+}
+
+.texto-info p {
+    width: 40%;
+}
+
+/*------------------------------------------ tarjetas Info --------------------------------*/
+
+.menu-info {
+    background-color: #fafafa;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    gap: 2.5rem;
+}
+
+.box-info {
+    width: 43%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.5rem;
+}
+
+.box-info-contenido .titulo {
+    color: #323851;
+    font-weight: bold;
+    padding: 0.6rem 0;
+}
+
+.numero {
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    padding: 0.6rem 1.5rem;
+    border-radius: 1.25rem;
+}
+
+.box-info-contenido p {
+    color: #B3B2B7;
+    font-style: normal;
+    text-align: justify;
+}
+
+
+/*------------------------------------------ Cards ------------------------------------*/
+.menu-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding: 6rem 1.6rem;
+}
+
+.container-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.personaje {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.box-card-texto {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+
+.personaje h4 {
+    color: #3F4868;
+}
+
+.personaje p {
+    color: #B9B9C1;
+    font-style: normal;
+    text-align: center;
+}
+
+.boton-more {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.boton-more button {
+    padding: 1rem 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+    color: #242e53;
+    text-align: center;
+}
+
+/*----------------------------------------- text info 2 -----------------------------------------*/
+.titulo-mobile {
+    display: none;
+}
+
+.texto-info.t2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 12rem;
+}
+
+.texto-info.t2 h4 {
+    width: 35%;
+    font-size: 2rem;
+}
+
+.boton-info {
+    background-color: #FFFFFF;
+    color: #8B48BF;
+}
+
+.boton-info:hover {
+    background-color: #9a82ac;
+    color: #FFFFFF;
+    box-shadow: 0 0.25rem 1rem #4f4358;
+    transition: all 0.3s ease;
+}
+
+/*--------------------------------------- footer -------------------------------------------- */
+
+footer {
+    background-color: #1e1e26;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 4rem 8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.box-footer {
+    width: 25%;
+    padding: 0.5rem;
+}
+
+.box-listas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 2;
+}
+
+.lista {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    gap: 2rem;
+    padding: 1.25rem;
+}
+
+.lista a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.lista a:hover {
+    color: #8B48BF;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.box-footer.box1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: inherit;
+    align-items: center;
+}
+
+.box2 input[type=text] {
+    border-radius: 2rem;
+    height: 2.7rem;
+}
+
+.box2 input[type=text]::placeholder {
+    padding-left: 1rem;
+}
+
+.box-footer a img:hover {
+    transform: scale(2);
+    transition: all 2s ease;
+}
+
+.lista-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem;
+}
+
+.lista-redes a {
+    width: 10%;
+    text-align: center;
+}
+
+.lista-redes a:hover {
+    transform: scale(2);
+    text-align: center;
+    transition: all 2s ease;
+
+}
+
+.logoFooter {
+    fill: #FFFFFF;
+}
+
+.box2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.derechos {
+    width: 100%;
+    color: #8C8C94;
+    font-style: normal;
+    text-align: right;
+    font-size: 0.75rem;
+}
+
+.box-footer.box button {
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    border-radius: 3.1rem;
+    padding: 0.6rem 1.5rem;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.box-footer.box button:hover {
+    background-color: #9a82ac;
+    box-shadow: 0 0.25rem 1rem #4f4358;
+    transition: all 0.3s ease;
+}
+
+.box2 input {
+    min-width: 75%;
+}
+
+.box2 button.boton-go {
+    text-align: center;
+    padding: 0.7rem 1.5rem;
+}
+
+.enfoque:focus {
+    background-color: mistyrose;
+    color: #8B48BF;
+}
+
+.derechos::after {
+    content: "Entregable Final Front End - Recuperación.";
+    padding: 3rem 0rem;
+    color: blanchedalmond;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------- medias query ------------------------------*/
+/*---------------------------------------------------------------------------------*/
+
+@media (max-width: 800px) {
+    .menu-navegacion {
+        display: none;
+    }
+
+    .menu-header {
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 3rem;
+    }
+
+    .boton-contacto {
+        display: none;
+    }
+
+    .menu-header i {
+        display: block;
+    }
+
+    .portada {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 1rem;
+    }
+
+    .portada .portada-izquierda {
+        width: 100%;
+    }
+
+    .portada .portada-derecha {
+        width: 100%;
+    }
+
+    .portada .portada-derecha h1 {
+        width: 100%;
+        font-size: 2.8rem;
+    }
+
+    .portada .portada-derecha p {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .texto-info {
+        background: #3CDDF3;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 4rem 4rem 4rem 2rem;
+    }
+
+    .texto-info h2 {
+        width: 100%;
+    }
+
+    .texto-info p {
+        width: 100%;
+        text-align: left;
+        font-size: 1.1rem;
+    }
+
+    .texto-info p.mobile {
+        display: block;
+    }
+
+    .texto-info p.desktop {
+        display: none;
+    }
+
+    /*---------------------------------- texto info 1----------------------------------*/
+
+    .menu-info {
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 2rem 0;
+    }
+
+    .box-info {
+        width: 90%;
+        gap: 0;
+        padding: 1rem 0 1rem 1rem;
+    }
+
+    .box-info-contenido .titulo {
+        background: rgba(139, 72, 191, 0.30);
+        padding: 0.6rem 0;
+        padding-left: 2rem;
+        box-shadow: -3.1rem 0 0 0 rgba(139, 72, 191, 0.30);
+    }
+
+    .box-info-contenido p {
+        text-align: left;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    /*----------------------------- menu cards -----------------------------------*/
+
+    .menu-cards {
+        padding: 2rem 1.6rem;
+    }
+
+    .menu-cards h3 {
+        font-size: 2rem;
+    }
+
+    .container-cards {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .personaje {
+        width: 100%;
+        padding: 1.25rem;
+    }
+
+    .box-card-texto p {
+        font-size: 0.75rem;
+        line-height: 1.4rem;
+    }
+
+    .personaje.p1 {
+        display: none;
+    }
+
+    .personaje.p3 {
+        display: none;
+    }
+
+    /*------------------------------- texto info 2 ----------------------------------*/
+
+    .texto-info.t2 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .texto-info.t2 h4 {
+        width: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .texto-info.t2 button.boton-info {
+        background-color: #232C50;
+        color: #FFFFFF;
+    }
+
+    /*---------------------------------------------------------------*/
+
+    .titulo-escritorio {
+        display: none;
+    }
+
+    .titulo-mobile {
+        display: block;
+        font-size: 2rem;
+    }
+
+    /*---------------------------- footer ---------------------------*/
+
+    footer {
+        padding: 3rem 1rem;
+    }
+
+    .menu-footer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .box-footer {
+        width: 100%;
+    }
+
+    .box-footer.box1 {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .box-footer.box {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0.5rem;
+    }
+
+    .lista-redes {
+        justify-content: space-around;
+        gap: 3rem;
+    }
+
+    .box2 {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .derechos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        position: relative;
+    }
+
+    .derechos::after {
+        position: absolute;
+        content: "Entregable Final Front End - Recuperación.";
+        top: 1.5rem;
+        color: blanchedalmond;
+    }
+}
